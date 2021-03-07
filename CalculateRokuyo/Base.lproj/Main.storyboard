@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalcRokuyo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcl-PO-k75">
+                                <rect key="frame" x="157" y="433" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.3803921569" green="0.33333333329999998" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="BUQ-CX-2wX"/>
+                                    <constraint firstAttribute="height" constant="50" id="eUr-bM-HZn"/>
+                                </constraints>
+                                <state key="normal" title="計算">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedCalc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bp5-U8-sq0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYh-eU-CzT">
+                                <rect key="frame" x="10" y="513" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIe-vs-EyN">
+                                <rect key="frame" x="10" y="564" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="PUz-HL-l4c">
+                                <rect key="frame" x="0.0" y="44" width="414" height="359"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="359" id="dOU-aV-Wza"/>
+                                </constraints>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IIe-vs-EyN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="6Ix-iD-XLZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IIe-vs-EyN" secondAttribute="trailing" constant="10" id="I68-eI-Bvg"/>
+                            <constraint firstItem="IYh-eU-CzT" firstAttribute="top" secondItem="hcl-PO-k75" secondAttribute="bottom" constant="30" id="RBg-R9-Otb"/>
+                            <constraint firstItem="hcl-PO-k75" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VyF-GT-uzS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PUz-HL-l4c" secondAttribute="trailing" id="aAt-pv-4eu"/>
+                            <constraint firstItem="IYh-eU-CzT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="c45-Dj-1Nh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IYh-eU-CzT" secondAttribute="trailing" constant="10" id="c70-2l-sbJ"/>
+                            <constraint firstItem="IIe-vs-EyN" firstAttribute="top" secondItem="IYh-eU-CzT" secondAttribute="bottom" constant="30" id="fIl-PJ-ziM"/>
+                            <constraint firstItem="hcl-PO-k75" firstAttribute="top" secondItem="PUz-HL-l4c" secondAttribute="bottom" constant="30" id="kAU-ds-4se"/>
+                            <constraint firstItem="PUz-HL-l4c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lMh-Kp-Rmp"/>
+                            <constraint firstItem="PUz-HL-l4c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vni-FC-fbz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calendar" destination="PUz-HL-l4c" id="yUK-qf-Qal"/>
+                        <outlet property="kyureki" destination="IYh-eU-CzT" id="qww-42-t1O"/>
+                        <outlet property="rokuyo" destination="IIe-vs-EyN" id="7t3-dx-Tuz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="82.366071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
